@@ -3,7 +3,7 @@ import { Col, Container, Jumbotron, Row } from "react-bootstrap";
 import dpImg from "../../Assets/vikum.jpg";
 var ReactFitText = require("react-fittext");
 
-export default function AboutMe() {
+export default function AboutMe({ scaleVal }) {
   const [startBox, setStartBox] = useState(false);
   const [startCover, setStartCover] = useState(false);
   const [startImage, setStartImage] = useState(false);
@@ -43,8 +43,16 @@ export default function AboutMe() {
       </div>
       <Row>
         <h2
-          style={{ opacity: 0, fontSize: 40, marginLeft: "5px" }}
-          className={`font-weight-normal  ${!startBox ? "" : "about-me__hi"}`}>
+          style={{
+            opacity: 0,
+            fontSize: 40 * scaleVal,
+            marginRight: "5px",
+            lineHeight: 1,
+            width: "96%",
+            textAlign: "end",
+            margin: 0,
+          }}
+          className={`font-weight-normal ${!startBox ? "" : "about-me__hi"}`}>
           Hello! This is
         </h2>
       </Row>
@@ -52,11 +60,13 @@ export default function AboutMe() {
         <h2
           style={{
             opacity: 0,
-            fontSize: 160,
+            fontSize: 160 * scaleVal,
             lineHeight: 1,
+            width: "98%",
+            textAlign: "end",
           }}
           className={`
-            font-weight-light display-3 
+            font-weight-normal display-3 m-0
             ${!startBox ? "" : "about-me__first-name"}`}>
           Vikum <span></span>
         </h2>
@@ -64,7 +74,13 @@ export default function AboutMe() {
 
       <Row>
         <h2
-          style={{ opacity: 0, fontSize: 160, lineHeight: 1 }}
+          style={{
+            opacity: 0,
+            fontSize: 160 * scaleVal,
+            lineHeight: 1,
+            width: "98%",
+            textAlign: "end",
+          }}
           className={`
                 font-weight-light display-3 
                 ${!startBox ? "" : "about-me__last-name"}`}>

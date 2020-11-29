@@ -25,11 +25,13 @@
 }
 
 .about-me__first-name {
+  font-size: 160px;
   -webkit-animation: slide-down 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s
     both;
   animation: slide-down 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s both;
 }
 .about-me__last-name {
+  font-size: 160px;
   -webkit-animation: slide-down 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s
     both;
   animation: slide-down 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s both;
@@ -151,6 +153,7 @@
  * animation slide-top
  * ----------------------------------------
  */
+
 @-webkit-keyframes slide-down {
   0% {
     opacity: 0;
@@ -175,7 +178,32 @@
     transform: translateY(20px);
   }
 }
-
+@media only screen and (max-width: 571px) {
+  @-webkit-keyframes slide-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+    }
+  }
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+    }
+  }
+}
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
