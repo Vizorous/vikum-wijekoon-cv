@@ -24,11 +24,6 @@ export default function AboutMeContainer() {
         }}>
         <AboutMe scaleVal={scaleVal}></AboutMe>
         <AboutMeDetails></AboutMeDetails>
-        <div className="w-100 text-center" style={{ opacity: "0.7" }}>
-          <i class="fas fa-arrow-down pt-3 "></i>
-          {"  "}
-          <span>Scroll Down </span>
-        </div>
       </div>
     </div>
   );

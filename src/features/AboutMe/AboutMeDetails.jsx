@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Col, Container, NavLink, Row } from "react-bootstrap";
 import { AnimContext } from "../../App";
+import ScrollDown from "../ScrollDown";
 
 export default function AboutMeDetails() {
   const { startAnim } = useContext(AnimContext);
@@ -59,6 +60,7 @@ export default function AboutMeDetails() {
           </Row>
         </Col>
       </Row>
+      <ScrollDown></ScrollDown>
     </Container>
   );
 }
