@@ -7,7 +7,7 @@ const CardDetails = [
   {
     name: "AIESEC in USJ Opportunity Viewer",
     desc:
-      "A tool that can be used to search the Exchange Opportunities of AIESEC in University of Sri Jayewardenepura",
+      "A tool that can be used to search the Exchange Opportunities of AIESEC in USJ",
     tech: "React, GraphQL,TypeScript, Bootstrap",
     projectLink: "https://usj-opportunity-viewer.web.app/",
     codebase: "https://github.com/Vizorous/opportunity-viewer",
@@ -36,20 +36,20 @@ Video processing server for Sipwin Institute `,
 export default function Projects() {
   return (
     <div
-      className="py-2"
       style={{
         height: "100vh",
         width: "100vw",
         backgroundColor: "#FB3640",
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-around",
       }}>
       <ScrollUp></ScrollUp>
       <div
         className="p-2"
         style={{
           maxWidth: 1080,
-          margin: "auto",
         }}>
         <span className="display-4">Projects</span>
         {CardDetails.map((item, index) => {
