@@ -41,16 +41,15 @@ export default function Projects() {
         width: "100vw",
         backgroundColor: "#FB3640",
         display: "flex",
-        flexDirection: "column",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "center",
       }}>
-      <ScrollUp></ScrollUp>
       <div
         className="p-2"
         style={{
           maxWidth: 1080,
         }}>
+        <ScrollUp></ScrollUp>
         <span className="display-4">Projects</span>
         {CardDetails.map((item, index) => {
           return (
@@ -83,8 +82,8 @@ export default function Projects() {
             </Card>
           );
         })}
+        <ScrollDown></ScrollDown>
       </div>
-      <ScrollDown></ScrollDown>
     </div>
   );
 }
