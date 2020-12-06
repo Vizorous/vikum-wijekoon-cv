@@ -6,6 +6,7 @@ import AboutMeDetails from "./features/AboutMe/AboutMeDetails";
 import { createContext, useState } from "react";
 import { SectionsContainer, Section } from "react-fullpage";
 import Projects from "./features/Projects/Projects";
+import ContactMe from "./features/ContactMe/ContactMe";
 
 export const AnimContext = createContext(false);
 function App() {
@@ -30,7 +31,7 @@ function App() {
             <Projects />
           </Section>
           <Section>
-            <AboutMeContainer />
+            <ContactMe />
           </Section>
         </SectionsContainer>
       </AnimContext.Provider>
